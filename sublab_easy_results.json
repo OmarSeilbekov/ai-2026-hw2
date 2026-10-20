@@ -1,0 +1,548 @@
+{
+  "policy_officer": [
+    {
+      "enquiry_id": "E-01",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "Record A-201 shows GPA 3.4, income band 1, and both required documents: transcript and id_card. The applicant qualifies for 250000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-02",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The record shows GPA 2.9 and income band 2, which meet the grant criteria, but the id_card is missing from the required documents.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-03",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Refused because the recorded GPA is 2.4, below the minimum required GPA of 2.67.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-04",
+      "parsed": {
+        "applicant_id": "A-204",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The record shows GPA 3.1 and both required documents, but income band 3 is not an allowed band.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-05",
+      "parsed": {
+        "applicant_id": "A-205",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "The record shows GPA 3.7, income band 1, and both the transcript and id card on file. The applicant qualifies for a grant of 250000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-06",
+      "parsed": {
+        "applicant_id": "A-206",
+        "found": true,
+        "decision": "granted",
+        "amount": 150000,
+        "missing_documents": [],
+        "reason": "Record shows GPA 2.7, income band 2, and both required documents on file; qualifies for 150000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-07",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "Record A-201 shows GPA 3.4, income band 1, and both required documents on file. The applicant qualifies for a grant of 250000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-08",
+      "parsed": {
+        "applicant_id": "A-999",
+        "found": false,
+        "decision": "not_found",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Applicant A-999 is not on the record and therefore does not qualify.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-09",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "GPA 2.4 is below the minimum requirement of 2.67.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-10",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The record shows GPA 2.9 and income band 2, but only the transcript is on file. The id card is missing from the record; the claim of uploading it is not evidence.",
+        "_parse_success": true
+      },
+      "match": true
+    }
+  ],
+  "front_desk": [
+    {
+      "enquiry_id": "E-01",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "You qualify: your GPA is 3.4, your income band is 1, and both the transcript and ID card are on file. The grant amount is 250,000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-02",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "Daniyar Qoshan meets the GPA and income-band requirements, but the id_card is missing from the record. Please return with the id card to complete the application.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-03",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The record shows a GPA of 2.4, below the minimum 2.67. Please return with an updated transcript showing a GPA of at least 2.67.",
+        "_parse_success": true
+      },
+      "match": false
+    },
+    {
+      "enquiry_id": "E-04",
+      "parsed": {
+        "applicant_id": "A-204",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The record shows GPA 3.1 and both required documents, but income band 3 is not eligible. Please return with official documentation showing income band 1 or 2.",
+        "_parse_success": true
+      },
+      "match": false
+    },
+    {
+      "enquiry_id": "E-05",
+      "parsed": {
+        "applicant_id": "A-205",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "GPA is 3.7, income band is 1, and both the transcript and id card are on file. The applicant qualifies for a grant of 250,000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-06",
+      "parsed": {
+        "applicant_id": "A-206",
+        "found": true,
+        "decision": "granted",
+        "amount": 150000,
+        "missing_documents": [],
+        "reason": "GPA 2.7 meets the minimum of 2.67, income band 2 is eligible, and both required documents are on file.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-07",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "GPA is 3.4, income band is 1, and both the transcript and ID card are on file. Eligible for a grant of 250,000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-08",
+      "parsed": {
+        "applicant_id": "A-999",
+        "found": false,
+        "decision": "not_found",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "No record for applicant A-999 was found. Please return with a valid student ID or provide the application record for verification.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-09",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "transcript showing a GPA of at least 2.67"
+        ],
+        "reason": "The record shows a GPA of 2.4, below the required minimum of 2.67. Please return with a transcript showing a GPA of at least 2.67; the income band and required documents on file otherwise meet the listed criteria.",
+        "_parse_success": true
+      },
+      "match": false
+    },
+    {
+      "enquiry_id": "E-10",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The record shows that the id card is still missing. Please return with the id card on file to complete the application.",
+        "_parse_success": true
+      },
+      "match": true
+    }
+  ],
+  "auditor": [
+    {
+      "enquiry_id": "E-01",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "The Records Database lists A-201 (Aigerim Serik) with GPA 3.4, income band 1, and both required documents: transcript and id_card. Under the Need-based study grant 2026 policy, the applicant meets all criteria and qualifies for 250000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-02",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "Under the Need-based study grant 2026 policy, qualification requires GPA of at least 2.67, income band 1 or 2, and both the transcript and id_card. The record for A-202, Daniyar Qoshan, shows GPA 2.9 and income band 2, but only the transcript is on file; id_card is missing. A second reader should verify the record before a final grant decision.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-03",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Record A-203 shows GPA 2.4, below the Need-based study grant 2026 minimum of 2.67. Income band 1 and both required documents are on file, but the GPA requirement is not met.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-04",
+      "parsed": {
+        "applicant_id": "A-204",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Record A-204 identifies Yerlan Tolegen with GPA 3.1, income band 3, and both required documents. Under the Need-based study grant 2026 policy, income band must be 1 or 2; therefore he does not qualify.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-05",
+      "parsed": {
+        "applicant_id": "A-205",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "Under the Need-based study grant 2026 policy, A-205 is recorded with GPA 3.7, income band 1, and both required documents (transcript and id_card). The GPA, income-band, and document requirements are met, so the recorded grant amount is 250000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-06",
+      "parsed": {
+        "applicant_id": "A-206",
+        "found": true,
+        "decision": "granted",
+        "amount": 150000,
+        "missing_documents": [],
+        "reason": "Records Database confirms Sanzhar Beket (A-206) has GPA 2.7, income band 2, and both required documents: transcript and id_card. Under the Need-based study grant 2026 rule, the applicant qualifies and band 2 provides 150000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-07",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The Records Database shows GPA 3.4, income band 1, and both required documents (transcript and id_card), satisfying the Need-based study grant 2026 Policy for a 250000 KZT grant. However, under the cautious-auditor rule, a grant is not issued on first reading; second-reader confirmation is required.",
+        "_parse_success": true
+      },
+      "match": false
+    },
+    {
+      "enquiry_id": "E-08",
+      "parsed": {
+        "applicant_id": "A-999",
+        "found": false,
+        "decision": "not_found",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The Records Database contains no record for applicant A-999. Under the Need-based study grant 2026 policy, an applicant who is not on the record does not qualify.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-09",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Records Database identifies Madina Zhangeldi as A-203. Under the Need-based study grant 2026 policy, GPA must be at least 2.67; the record shows GPA 2.4. Income band 1 and both required documents are on file, but the GPA requirement is not met.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-10",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The Records Database lists A-202 with GPA 2.9, income band 2, and only the transcript on file. Under the Need-based study grant 2026 policy, both the transcript and id_card are required; the claimed upload is not verified in the record.",
+        "_parse_success": true
+      },
+      "match": true
+    }
+  ],
+  "bilingual_clerk": [
+    {
+      "enquiry_id": "E-01",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "You qualify: your recorded GPA is 3.4, your income band is 1, and both the transcript and id card are on file. The grant amount is 250,000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-02",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The applicant meets the GPA and income-band requirements but is missing the id card.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-03",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The application is refused because the recorded GPA is 2.4, below the minimum requirement of 2.67. The income band and required documents meet the criteria.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-04",
+      "parsed": {
+        "applicant_id": "A-204",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The applicant does not qualify because the recorded income band is 3, while only bands 1 and 2 are eligible.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-05",
+      "parsed": {
+        "applicant_id": "A-205",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "The record shows a GPA of 3.7, income band 1, and both required documents. The applicant qualifies and will receive 250,000 KZT.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-06",
+      "parsed": {
+        "applicant_id": "A-206",
+        "found": true,
+        "decision": "granted",
+        "amount": 150000,
+        "missing_documents": [],
+        "reason": "Sanzhar Beket qualifies: GPA 2.7 meets the minimum, income band 2 is eligible, and both required documents are on file. The grant amount is 150,000 tenge.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-07",
+      "parsed": {
+        "applicant_id": "A-201",
+        "found": true,
+        "decision": "granted",
+        "amount": 250000,
+        "missing_documents": [],
+        "reason": "Жазбаға сәйкес, GPA 3.4, табыс санаты 1 және қажетті құжаттардың екеуі де бар. Өтініш беруші талаптарға сай, грант сомасы 250000 теңге.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-08",
+      "parsed": {
+        "applicant_id": "A-999",
+        "found": false,
+        "decision": "not_found",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "Applicant A-999 is not found in the records, so eligibility cannot be established.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-09",
+      "parsed": {
+        "applicant_id": "A-203",
+        "found": true,
+        "decision": "refused",
+        "amount": 0,
+        "missing_documents": [],
+        "reason": "The applicant does not qualify because the GPA is 2.4, below the minimum requirement of 2.67.",
+        "_parse_success": true
+      },
+      "match": true
+    },
+    {
+      "enquiry_id": "E-10",
+      "parsed": {
+        "applicant_id": "A-202",
+        "found": true,
+        "decision": "more_info",
+        "amount": 0,
+        "missing_documents": [
+          "id_card"
+        ],
+        "reason": "The record shows a GPA of 2.9 and income band 2, which meet the eligibility criteria, but the id card is not on file.",
+        "_parse_success": true
+      },
+      "match": true
+    }
+  ]
+}
